@@ -2,11 +2,13 @@
 name = "dioxus-library-template"
 version = "0.1.0"
 edition = "2021"
+description = "Library for Dioxus 🧬"
 readme = "./README.md"
 homepage = "https://github.com/dioxus-community/dioxus-library-template"
 repository = "https://github.com/dioxus-community/dioxus-library-template"
 keywords = ["dioxus"]
 categories = ["gui"]
+license = "MIT"
 
 [dependencies]
 dioxus = { version = "0.4", default-features = false, features = ["macro", "hooks"] }
