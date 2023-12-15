@@ -12,6 +12,9 @@ license = "MIT"
 
 [dependencies]
 dioxus = { version = "0.4", default-features = false, features = ["macro", "hooks"] }
+serde_json = "1"
+tracing = "0.1"
+tracing-subscriber = "0.2"
 
 [dev-dependencies]
 dioxus-desktop = "0.4.3"
