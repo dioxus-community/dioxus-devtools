@@ -1,6 +1,5 @@
 use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
-
 use tracing_subscriber::Layer;
 
 #[derive(Debug, Clone, PartialEq)]
@@ -22,7 +21,7 @@ impl HookState {
 #[allow(dead_code)]
 #[derive(Debug)]
 pub enum Hook {
-    UseState { value: String },
+    UseCoolState { value: String },
 }
 
 #[derive(Default, Debug)]
@@ -90,7 +89,7 @@ impl TryFrom<HookBuilder> for Hook {
 
     fn try_from(value: HookBuilder) -> Result<Self, Self::Error> {
         match value.name.as_ref() {
-            Some(v) if v == "UseState" => Ok(Self::UseState {
+            Some(v) if v == "UseCoolState" => Ok(Self::UseCoolState {
                 value: value.value.unwrap(),
             }),
             _ => Err(()),

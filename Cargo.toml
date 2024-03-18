@@ -19,3 +19,9 @@ tracing-subscriber = "0.2"
 [dev-dependencies]
 dioxus-desktop = "0.4.3"
 dioxus = { version = "0.4", default-features = true }
+freya = { git = "https://github.com/marc2332/freya", rev = "1cd0d3751be00c80a5335b6e0320e7a3ff241f52"}
+freya-core = { git = "https://github.com/marc2332/freya", rev = "1cd0d3751be00c80a5335b6e0320e7a3ff241f52"}
+rand = "0.8.5"
+crossterm = "0.27.0"
+ratatui = "0.24.0"
+chrono = "0.4.31"
